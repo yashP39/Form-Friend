@@ -1,7 +1,7 @@
 from flask_restful import Api
 import json
 import urllib.request
-from flask import Flask, request, redirect, jsonify, make_response, send_file
+from flask import Flask, request, redirect, jsonify, make_response, send_file,render_template
 from flask_cors import CORS
 import mysql.connector
 from flask_cors import CORS
@@ -99,7 +99,8 @@ def email():
     connection.close()
     resp = jsonify("Success")
     resp.status_code = 200
-    return resp
+    return render_template('student_home.html')
+    
     #sendemail(sender=sender,reciever=reciever,apppass=apppass)
 
 @app.route('/reminder', methods=['GET'])
@@ -215,7 +216,7 @@ def reminder():
     # print("success")
     respe = jsonify("success")
     respe.status_code = 200
-    return respe
+    return render_template('student_home.html')
 
 
 @app.route('/fup', methods=['GET'])

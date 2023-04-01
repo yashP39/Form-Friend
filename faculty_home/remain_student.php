@@ -9,7 +9,7 @@ $json_data = file_get_contents($api_url);
 $response_data = json_decode($json_data);
 
 print_r($response_data);
-
+echo nl2br("\n",false);
 
 $con=mysqli_connect("localhost","root","","404_found");
 
@@ -18,45 +18,29 @@ $con=mysqli_connect("localhost","root","","404_found");
         exit();
     }
     
-        $department = mysqli_real_escape_string($con, $_POST['department']);
-        $semester = mysqli_real_escape_string($con, $_POST['semester']);
-        $msg = mysqli_real_escape_string($con, $_POST['msg']);
-        $batch = mysqli_real_escape_string($con, $_POST['batch']);
-        $link = mysqli_real_escape_string($con, $_POST['link']);
-        
-
-        function returnVal() {
-            $txt = "Hii";
-            echo $txt;
-            return $txt;
-        }
-
-        
-        // Insert the data into the database
-        $sql = "INSERT INTO sendmail VALUES ('$department','$semester','$batch','$link','$msg')";
-        
-        if (mysqli_query($con, $sql)) {
-            header("Location: http://127.0.0.1:5000/email");
-        } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($con);
-        }
-        mysqli_close($con);
-    }
     else
     {
-        $sql1 = "select firstname FROM `student` WHERE email=$response_data[0]";
-        mysqli_query($con,$sql1);
+        $sql1 = "select firstname FROM student WHERE email='$response_data[0]'";
+        $result1 = mysqli_query($con, $sql1);
 
-        if (mysqli_query($con, $sql1)) {
-            echo "First name :- {$sql1}";
+        $row1 = mysqli_fetch_assoc($result1);
+
+        if (mysqli_num_rows($result1) > 0) {
+            print_r($row1['firstname']);
         }
 
-        $sql2 = "select lastname FROM `student` WHERE email=$response_data[0]";
-        mysqli_query($con,$sql2);
+        $sql2 = "select lastname FROM student WHERE email='$response_data[0]'";
+        $result2 = mysqli_query($con, $sql2);
 
-        if (mysqli_query($con, $sql2)) {
-            echo "Last name :- {$sql2}";
+        $row1 = mysqli_fetch_assoc($result2);
+
+        if (mysqli_num_rows($result2) > 0) {
+            echo " ";
+            print_r($row1['lastname']);
         }
+
+        mysqli_close($con);
+
     }    
 
 

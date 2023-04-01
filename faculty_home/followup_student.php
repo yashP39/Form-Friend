@@ -19,7 +19,12 @@
     <header>
         <img src="../logo.png" id="logo" alt="404 Found">
         
-        <button id="submit" type="submit">Back</button>
+        <button  onclick="back()" id="submit" type="submit">Back</button>
+           <script>
+                function back() {
+                    window.location.href = "http://localhost/Form-Friend/faculty_home/facultySendReminder.php";
+                }
+            </script>
 
   </header>
     

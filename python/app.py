@@ -99,7 +99,8 @@ def email():
     connection.close()
     resp = jsonify("Success")
     resp.status_code = 200
-    return resp
+    return render_template('student_home.html')
+    
     #sendemail(sender=sender,reciever=reciever,apppass=apppass)
 
 @app.route('/reminder', methods=['GET'])

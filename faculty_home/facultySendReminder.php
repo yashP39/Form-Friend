@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <img src="logo.png" id="logo" alt="404 Found">
+        <img src="../logo.png" id="logo" alt="404 Found">
       <nav class="navigation">
 
         <button class="login-popup" onclick="redirectToIndex()">Back</button>

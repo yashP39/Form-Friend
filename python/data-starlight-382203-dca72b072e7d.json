@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "data-starlight-382203",
+  "private_key_id": "dca72b072e7d91f2236357795903e9291199274c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDKzj4cP9083zmr\njL3FEX1drOSybiM+z6nDYdyYh6ZklQeAXw3C5vKa2dCBcpCZEkGyr4kxWnwzxqg7\nYLCuyhz1P6d1AHlVwt4I1GIutEFMmxmzpfXTDK0asPjqrzIokce7sObvvyZEPpgq\nqf3rEEdvV9Hbbxf44n3SdCj6Guioa2HNCJCicnEBNduVIF2YCmtZ+wfP3bgQ9+yv\n5ywpUKZS/Lz3IBQi1KNFIaYwpda+qmpCfXlgwrdOPS73YiIxEt5n6F21KLqgK0wM\nwYp958uYsfdsV9XpjMKzRvtBTe1yOGYCyI3NR3r3o57WThJWofwYR58cPaW7WK/d\nxD/3uL/XAgMBAAECggEAWTsDQuSqj9Tbh+pFuMZoNWYTvZoN8d3moKuXJplQkaKs\niUPJRz7b8VvyjHH+wwqwU1E+eLOKQDGg5Xc2ZcFRmmpmYGlT+XLixFnF1SzEKlN3\nrH5RuYkzRLIm4wMwe38gtSkxgrzEtnQf+W2P5fPkqk2mbPjlQEFPAODRArICOc80\noysPIwPlULVF5p9Qont3qoiT+VtCpfPzL38QQfqOS59QG6cDfmfo/IEsVO9OLS/5\nwLl2PJ8CMFRa44JG2MpA0TVsKuMYRjfNfBEkxlnXPVQbbZIHr5wp8ADw+YHT6RD/\nV7LgQ9rbncUgmwRGiZ416HtVK4ms8boRmxFA4WWekQKBgQDubDwrmQpRiDyX0xEA\nvKkqncjkPUhqqJhHxNS1J+x85QlBjhwQXiBdI1v8xgXHPvY4efVmj5SUMc7DH2hK\niRNHR9LN7ATPcqaPzD+XVSTEAdvR56ID8OoEEZSOBrfHZlGQnLQFNrSe9nABPgxG\nssDj/fT3nRhCAnED6C+SDX9IvwKBgQDZwc2gQwsGNYD4S42f8RF0h6u83w6c2NhO\nI8Y7FjZJSFRGBIO3TC4vPZFqZhd83SB0XOQ8xjat+G0B+TkT9KjvR9+tWNbB9oAP\nKmwVoOUSaPynLVGsRyw3mCChdq8jAtjLLskUMtzWHy9r+49CxrynXNFUgV3wUjiD\nQsk2Jwj26QKBgQCCovFxHgDGXbR9p9uIINc8D4pUbLOyJUCTCmlV/VMZt9ETh08f\nNMPc5JPxc3sVCg2VMlXg5UkOzh+xUBMvy92xT8xUoj6cgAB9h/dL7w4fC7mrUJS4\nPherNQrFqy6lZg3JA+Ore6cJ9pO2So4laqpAAhVoWz5AZOARuPXfu9+DNwKBgAH6\n9TfD5FHGIsofRcZylsoMgc9R5/wdLLppMOBQr2WzNrD8UYZVNwZO9QeWrhgAms70\nGU9ELjMe0z71WUOJMhAbAzm8WReiej+pDxqTQAIO2l1a2CdM7mYDCCjvv1/+IqKW\nZlW8sK1x0yiUPRVKYWTUP0MZehU5ajInZVUMvdQhAoGBANM85zGAAQzjBO7RNhhk\ntj3rJUnlplr8sij9y6X9jc/nElh7aHjfppmyfp3Nqvsyn9H8qmaHB667VyZveCAw\ndLDGi/XhZnnF7UJ9GJVspL0f6ughv8Refs3dWWGG41qDFDM0O+NEd8cJjsDYARS6\nThdNAcSZ++j2rfFetOpCTA6Y\n-----END PRIVATE KEY-----\n",
+  "client_email": "vrajshah@data-starlight-382203.iam.gserviceaccount.com",
+  "client_id": "117361647594237556882",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vrajshah%40data-starlight-382203.iam.gserviceaccount.com"
+}

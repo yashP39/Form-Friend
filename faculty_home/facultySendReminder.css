@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    background: #d7e8ee; 
+    /* background-size: cover;
+    background-position: center;  */
+    width: 100%;
+    height: 100%;
+}
+#logo{
+    position: relative;
+    height: 65px;
+    width: 140px;
+    margin-left: 110px;
+    padding: 3px 3px;
+    font-size: 1.8rem;
+    top: -290px;
+    left: -70px;
+}
+.login-popup{
+    position: relative;
+    bottom: 350px;
+    left: 1160px;
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(7, 7, 7);
+    font-weight: 500;
+    /* margin-left: 50px; */
+    margin: 2px 15px;
+    padding: 4px 5px;
+}
+.login-popup:hover{
+    background-color: black;
+    color: #d7e8ee;
+}
+#sendBtn{
+    position: relative;
+    bottom: -2px;
+    left: 55px;
+    padding: 2px 3px;
+    margin: 20px 190px;
+    width: 200px;
+    height: 75px;
+    background: #d7e8ee;
+    border: 3px solid black;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
+#sendBtn:hover{
+    background-color: black;
+    color: #d7e8ee;
+}
+#followupBtn{
+    position: relative;
+    bottom: 113px;
+    left: 165px;
+    padding: 2px 5px;
+    margin: 20px 436px;
+    width: 200px;
+    height: 75px;
+    background: #d7e8ee;
+    border: 3px solid black;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
+#followupBtn:hover{
+    background-color: black;
+    color: #d7e8ee;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    margin: 2px 5px;
+    padding: 0px 10px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container{
+    position: relative;
+    top: 40px; 
+    right: 130px;
+    height: 600px;
+    width: 100%;
+    padding: 23px 34px;
+    margin: 10px auto;
+    font-size: 22px;
+}

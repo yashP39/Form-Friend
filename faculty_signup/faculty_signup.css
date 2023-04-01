@@ -1,0 +1,116 @@
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background: #d7e8ee; 
+    /* background-size: cover;
+    background-position: center;  */
+    width: 100%;
+    height: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+#logo{
+    height: 65px;
+    width: 140px;
+    margin-left: -10px;
+    padding: 3px 3px;
+    font-size: 1.8rem;
+}
+h3{
+    margin: 7px 185px;
+    padding: 2px 4px;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    /* text-shadow: -3px -4px 1px grey; */
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.login-popup{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(7, 7, 7);
+    font-weight: 500;
+    margin-left: 50px;
+}
+.login-popup:hover{
+    background-color: black;
+    color: #d7e8ee;
+}
+.container{
+    position: relative;
+    top: 130px; 
+    height: 530px;
+    width: 700px;
+    padding: 23px 34px;
+    margin: 10px auto;
+    border: 3px solid black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border: 3px solid black;
+    border-radius: 20px;
+}
+#submit{
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #d7e8ee;
+    font-weight: 500;
+}
+#submit:hover{
+    background-color: rgb(62, 61, 61);
+}
+#show-password{
+    position: relative;
+    left: 585px;
+    bottom: 30px;
+    cursor: pointer;
+}

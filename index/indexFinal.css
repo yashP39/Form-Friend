@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background: #d7e8ee; 
+    width: 100%;
+    height: 100%;
+} 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+#logo{
+    height: 65px;
+    width: 140px;
+    margin-left: -10px;
+    padding: 3px 3px;
+    font-size: 1.8rem;
+} 
+.navbar a{
+    position: relative;
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 4px;
+    bottom: -2px;
+    height: 5px;
+    width: 82%;
+    background-color: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.navbar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn{
+    position: relative;
+    width: 100px;
+    height: 42px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(7, 7, 7);
+    font-weight: 500;
+    margin-left: 80px;
+    right: 120px;
+}
+.btn:hover{
+    background-color: black;
+    color: #d7e8ee;
+    border: 1px solid black;
+} 
+/* .btn-login-success{
+    background-color: black;
+    color: #d7e8ee;
+    outline: none;
+} */
+.ml-3, #logo {
+    margin-left: -1rem!important;
+}
+
+.mr-3, #logo {
+    margin-right: 65rem!important;
+}
+.nav-link{
+    position: relative;
+    width: 123px;
+    height: 42px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(7, 7, 7);
+    font-weight: 500;
+    margin: 1px 25px;
+    padding: 7px 20px;
+    right: 120px;
+}
+.nav-link:hover{
+    background-color: black;
+    color: #d7e8ee;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    /* background-color: black;
+    color: #d7e8ee; */
+    padding: 2px 10px;
+    margin: 2px 0px;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -105px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 9rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+#middleLine h1{
+    position: relative;
+    right: 260px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    top: 165px;
+    margin-bottom: 25px;
+}
+#middleLine h2{
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    top: 60px;
+    left: 340px;
+    padding: 12px 3px;
+    margin: -40px 2px;
+}
+#middleLine h6{
+    position: relative;
+    bottom: 45px;
+    left: 250px;
+    margin: 30px;
+    font-family: 'Bona Nova', serif;
+    font-size: 30px;
+}
+#middleLine strong{
+    position: relative;
+    top: 100px;
+    right: 150px;
+    font-family: 'Alkatra', cursive;
+    font-size: 80px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 100px;
+}
+#middleLine emphasis{
+    position: relative;
+    top: 30px;
+    left: 310px;
+    font-family: 'Alkatra', cursive;
+    font-size: 80px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 40px 2px;
+    margin: 2px 4px;
+    font-size: 100px;
+}

@@ -1,4 +1,5 @@
 <?php require('send_mail.php'); ?>
+<?php require('alert.php'); ?>
 
 <!doctype html>
 <html lang="en">

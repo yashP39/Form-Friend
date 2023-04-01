@@ -65,13 +65,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="password">Application Password</label>
-                    <input type="text" class="form-control" name="apppassword" id="apppassword" placeholder="Enter Application Password"
-                    name="appPassword">
-                    <small class="invalid-feedback is-invalid">Enter valid application password</small>
-                </div>
-
-                <div class="form-group">
                     <label for="password">Password :</label>
                     <input type="password" class="form-control" id="password" name="password"
                         placeholder="Enter your Password">

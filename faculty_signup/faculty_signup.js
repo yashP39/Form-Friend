@@ -1,5 +1,4 @@
 let validemail = false;
-let validapppasword = false;
 let validfirstname = false;
 let validlname = false;
 let validpassword = false;
@@ -53,21 +52,6 @@ email.addEventListener('blur', () => {
     }
 })
 
-apppassword.addEventListener('blur', () => {
-    console.log('apppassword is blurred');
-    let str = apppassword.value;
-    if (str != '') {
-        console.log('valid apppassword');
-        apppassword.classList.remove('is-invalid');
-        validapppasword = true;
-    }
-    else {
-        console.log('not valid appPassword');
-        apppassword.classList.add('is-invalid');
-        validapppasword = false;
-    }
-})
-
 password.addEventListener('blur', () => {
     console.log('password is blurred');
     let str = password.value;
@@ -101,7 +85,7 @@ submit.addEventListener('click', () => {
     // e.preventDefault();
     console.log('clicked submit');
     
-    if(validemail && validpassword && validappPasword && validfirstname && validlname) {
+    if(validemail && validpassword && validfirstname && validlname) {
         console.log('submitting form');
         // location.href = "https://www.google.com/";
     }

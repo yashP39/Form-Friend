@@ -33,7 +33,7 @@
     }
     else if (isset($_POST['followup']) and isset($_POST['link'])) {
 
-        header("Location: http://localhost/Form-Friend/faculty_home/send_followup.php");
+        header("Location: http://localhost/Form-Friend/faculty_home/followup_student.php");
         mysqli_close($con);
         
     }

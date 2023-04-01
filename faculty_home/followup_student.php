@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <img src="./logo.png" id="logo" alt="404 Found">
+        <img src="../logo.png" id="logo" alt="404 Found">
         
         <button id="submit" type="submit">Back</button>
 
@@ -50,3 +50,50 @@
 </body>
 
 </html>
+<?php
+
+    $con=mysqli_connect("localhost","root","","404_found");
+
+    if(mysqli_connect_error()){
+        echo"<script>aleart('Connection failed !!')</script>";
+        exit();
+    }
+    $api_url = 'http://127.0.0.1:5000/fup';
+
+        // Read JSON file
+        $json_data = file_get_contents($api_url);
+
+        // Decode JSON data into PHP array
+        $response_data = json_decode($json_data);
+
+        // print_r($response_data);
+
+        echo nl2br("\n",false);
+        $lenght = count($response_data);
+
+        for ($x = 0; $x < $lenght; $x++) {
+            $sql1 = "select firstname,lastname FROM student WHERE email='$response_data[$x]'";
+            $result1 = mysqli_query($con, $sql1);
+
+            $row1 = mysqli_fetch_assoc($result1);
+
+            if (mysqli_num_rows($result1) > 0) {
+                print_r($row1['firstname']);              
+            }
+
+            $sql2 = "select lastname FROM student WHERE email='$response_data[$x]'";
+            $result2 = mysqli_query($con, $sql2);
+
+            $row1 = mysqli_fetch_assoc($result2);
+
+            if (mysqli_num_rows($result2) > 0) {
+                echo " ";
+                print_r($row1['lastname']);
+            }
+
+            echo nl2br("\n",false);
+
+        }
+        mysqli_close($con);
+
+?>
